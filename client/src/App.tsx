@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
-//import Message from './Message';
+
 interface Info {
   name: string;
   age: number;
@@ -12,14 +12,13 @@ function App() {
   const fetchApi = async () => {
     const response = await axios.get('http://localhost:8080/api');
     setInfo(response.data);
-    //console.log(response.data.cars);
   };
   useEffect(() => {
     fetchApi();
   }, []);
   return (
     <div className='container'>
-      <img src='../src/assets/avatar.png' alt='' />
+      <img src='../src/assets/avatar.png' alt='Avatar img' />
 
       {info && (
         <ul>

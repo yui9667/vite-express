@@ -12,11 +12,7 @@ img {
   transition: 0px;
   border-radius: 10px;
 }
-img:active {
-  box-shadow: 0;
-  transform: translateY(6px); /*下に動く*/
-  box-shadow: none;
-}
+
 .container {
   display: flex;
   flex-direction: row;
